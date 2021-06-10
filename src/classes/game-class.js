@@ -79,18 +79,18 @@ export class Game {
     numbers.forEach(x => x.remove());
 
     document.getElementById('holder').innerHTML = `
-    <img class="numbers" src="/img/n1.svg" id="1">
-    <img class="numbers" src="/img/n2.svg" id="2">
-    <img class="numbers" src="/img/n3.svg" id="3">
-    <img class="numbers" src="/img/n4.svg" id="4">
-    <img class="numbers" src="/img/n5.svg" id="5">
-    <img class="numbers" src="/img/n6.svg" id="6">
-    <img class="numbers" src="/img/n7.svg" id="7">
-    <img class="numbers" src="/img/n8.svg" id="8">
-    <img class="numbers" src="/img/n9.svg" id="9">
+    <img class="numbers" src="./img/n1.svg" id="1">
+    <img class="numbers" src="./img/n2.svg" id="2">
+    <img class="numbers" src="./img/n3.svg" id="3">
+    <img class="numbers" src="./img/n4.svg" id="4">
+    <img class="numbers" src="./img/n5.svg" id="5">
+    <img class="numbers" src="./img/n6.svg" id="6">
+    <img class="numbers" src="./img/n7.svg" id="7">
+    <img class="numbers" src="./img/n8.svg" id="8">
+    <img class="numbers" src="./img/n9.svg" id="9">
     `;
     document.getElementById(this.center).remove();
-    document.getElementById('fixCenter').src = `/img/n${this.center}g.svg`;
+    document.getElementById('fixCenter').src = `./img/n${this.center}g.svg`;
     this.checkBoard();
   }
 
