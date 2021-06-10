@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab&display=swap" rel="stylesheet">
+  <title>Combination Nine</title>
+</head>
+<body>
+  <div class="mainDiv">
+    <div class="statDiv">
+      <b>POINTS</b><br>
+      <span id="points">0</span>
+      <br><br>      
+      <b>TIME</b><br>
+      <span id="timer">00:00</span>
+    </div>
+    <div id="netDiv">
+      <div id="gridDiv">
+        <div class="smallCirclesBar">
+          <div class="smallCircle" id="leftTopCorner"></div>
+          <div class="smallCircle" id="topCenter"></div>
+          <div class="smallCircle" id="rightTopCorner"></div>
+        </div>
+        <div class="bigCirclesBar">
+          <div class="bigCircle" id="topLeft">19</div>
+          <div class="bigCircle" id="topRight">17</div>
+        </div>
+        <div class="smallCirclesBar">
+          <div class="smallCircle" id="leftCenterCorner"></div>
+          <div class="smallCircle"><img class="numbers" id="fixCenter" draggable="false"></div>
+          <div class="smallCircle" id="rightCenterCorner"></div>
+        </div>
+        <div class="bigCirclesBar">
+          <div class="bigCircle" id="bottomLeft">18</div>
+          <div class="bigCircle" id="bottomRight">16</div>
+        </div>
+        <div class="smallCirclesBar">
+          <div class="smallCircle" id="bottomLeftCorner"></div>
+          <div class="smallCircle" id="bottomCenter"></div>
+          <div class="smallCircle" id="bottomRightCorner"></div>
+        </div>
+      </div>
+    </div>
+    <div class="menuDiv">
+      <input type="button" value="NEW GAME" id="newGameButton" class="buttons">
+      <input type="button" value="RESET BOARD" id="resetButton" class="buttons">
+      <input type="button" value="GIVE UP" id="givUpButton" class="buttons">
+    </div>
+  </div>
+  <div id="holder">
+    <img class="numbers" src="/img/n1.svg" id="1">
+    <img class="numbers" src="/img/n2.svg" id="2">
+    <img class="numbers" src="/img/n3.svg" id="3">
+    <img class="numbers" src="/img/n4.svg" id="4">
+    <img class="numbers" src="/img/n5.svg" id="5">
+    <img class="numbers" src="/img/n6.svg" id="6">
+    <img class="numbers" src="/img/n7.svg" id="7">
+    <img class="numbers" src="/img/n8.svg" id="8">
+    <img class="numbers" src="/img/n9.svg" id="9">
+  </div>
+  <script src="./src/main.js" type="module"></script>
+</body>
+</html>
